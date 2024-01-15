@@ -76,3 +76,20 @@
     font-weight: 700;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .list ul{
+        flex-direction: column;
+    }
+}
