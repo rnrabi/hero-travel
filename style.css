@@ -1,13 +1,15 @@
 * {
     margin: 0 auto;
     padding: 0;
-    width: 1170px;
 }
-
+.banner-section{
+    width: 90%;
+}
 .banner {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size: cover;
     height: 500px;
-    border-radius: 16px;
+    border-radius: 1rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -34,13 +36,9 @@
     margin-bottom: 48px;
 }
 
-.list {}
-
 .list ul {
-    /* display: flex; */
     display: inline-flex;
-    /* justify-content: center; */
-    width: 68%;
+    width: 83%;
     padding: 16px;
     align-items: flex-start;
     gap: 24px;
@@ -50,8 +48,8 @@
 
 .list ul li {
     list-style-type: none;
-    width: 174px;
-    /* height: 52px; */
+    /* width: 174px; */
+    width: 22%;
     padding: 26px 0;
     flex-shrink: 0;
     border-radius: 8px;
@@ -91,5 +89,12 @@
 @media screen and (max-width:600px) {
     .list ul{
         flex-direction: column;
+    }
+    .list ul li{
+        width: 100%;
+    }
+    .banner{
+        background-size:contain;
+        height: auto;
     }
 }
