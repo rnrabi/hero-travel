@@ -6,7 +6,8 @@
 .banner-section,
 .popular,
 .destination,
-.choose-us {
+.choose-us,
+.newsleter {
     width: 90%;
     margin-bottom: 100px;
 }
@@ -246,6 +247,104 @@
     line-height: 1.625rem;
 }
 
+/* *************** */
+.newsleter {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.newsleter .content-text {
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsleter .content-text hr {
+    margin: 24px 0;
+}
+
+.newsleter .content-text h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsleter .content-text p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.newsleter .content-text input {
+    color: rgba(19, 19, 24, 0.30);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 0;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.newsleter .content-text input[type="text"] {}
+
+.newsleter .content-text input[type="email"] {}
+
+.newsleter .content-text input[type="submit"] {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.news-image{
+    position: relative;
+}
+.news-image img {
+    width: 100%;
+}
+
+.news-image .save {
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    width: 48%;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+    bottom: 53px;
+}
+
+.news-image .save h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.news-image .save h2 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -281,13 +380,19 @@
     .destination img {
         width: 100%;
     }
-    .hotel-service{
+
+    .hotel-service {
         flex-direction: column;
     }
-    .price{
-        width:100%;
-    }
-    .choose-us>p{
+
+    .price {
         width: 100%;
+    }
+
+    .choose-us>p {
+        width: 100%;
+    }
+    .newsleter{
+        flex-direction: column;
     }
 }
