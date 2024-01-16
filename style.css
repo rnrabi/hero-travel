@@ -5,7 +5,8 @@
 
 .banner-section,
 .popular,
-.destination {
+.destination,
+.choose-us {
     width: 90%;
     margin-bottom: 100px;
 }
@@ -131,7 +132,8 @@
 }
 
 /* ********** */
-.destination h2 {
+.destination h2,
+.choose-us>h2 {
     color: #131318;
     text-align: center;
     font-family: Mulish;
@@ -140,7 +142,8 @@
     margin-bottom: 24px;
 }
 
-.destination p {
+.destination p,
+.choose-us>p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
@@ -181,9 +184,67 @@
     top: 50%;
 }
 
+/* ************* */
+.hotel-service {
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+    margin: 50px 0;
+}
 
+.hotel-service .hotel-service-1 {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
 
+.hotel-service .hotel-service-2 {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
 
+.hotel-service h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.hotel-service p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+
+}
+
+.price {
+    padding: 20px;
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin-bottom: 100px;
+}
+
+.price h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.price p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
 
 
 
@@ -212,11 +273,21 @@
 
     .first-img,
     .second-img,
-    .third-img{
+    .third-img {
         flex-direction: column;
         /* width: 100%; */
     }
-    .destination img{
+
+    .destination img {
+        width: 100%;
+    }
+    .hotel-service{
+        flex-direction: column;
+    }
+    .price{
         width:100%;
+    }
+    .choose-us>p{
+        width: 100%;
     }
 }
