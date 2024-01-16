@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 35px;
+
+}
+
 .banner-section,
 .popular,
 .destination,
@@ -10,6 +20,56 @@
 .newsleter {
     width: 90%;
     margin-bottom: 100px;
+}
+
+header .logo,
+.menu {
+    margin: 0;
+}
+
+header .logo h2 img {
+    width: 32px;
+}
+
+header .logo .hero {
+    color: var(--Dark-01, #131318);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+header .logo .travel {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.menu ul {
+    display: flex;
+    gap: 10px;
+}
+.menu ul .fa-bars{
+    display: none;
+}
+.menu ul li:first-child {
+    color: #FF5400;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 5px;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .banner {
@@ -341,17 +401,20 @@
 }
 
 /* footer css */
-footer{
+footer {
     background: rgba(19, 19, 24, 0.05);
     padding: 110px 0;
 }
-footer h2{
+
+footer h2 {
     text-align: center;
     margin-bottom: 15px;
 }
-footer h2 img{
+
+footer h2 img {
     width: 32px;
 }
+
 footer .hero {
     color: var(--Dark-01, #131318);
     font-family: Mulish;
@@ -375,16 +438,19 @@ footer p {
     line-height: 26px;
     margin-bottom: 32px;
 }
-footer ul{
+
+footer ul {
     display: flex;
     justify-content: center;
-    width:12%;
+    width: 12%;
     margin-bottom: 50px;
 }
-footer ul li{
+
+footer ul li {
     list-style-type: none;
 }
-footer hr{
+
+footer hr {
     width: 85%;
     margin-bottom: 50px;
 }
@@ -441,5 +507,14 @@ footer hr{
 
     .newsleter {
         flex-direction: column;
+    }
+    /* header .menu{
+        display: none;
+    } */
+    .menu ul .h{
+        display: none;
+    }
+    .menu ul .fa-bars{
+        display: block;
     }
 }
