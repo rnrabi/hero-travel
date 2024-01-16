@@ -159,11 +159,18 @@
     gap: 24px;
     margin-bottom: 24px;
 }
+
 .male {
     position: relative;
 }
 
-.maldiv , .indonesia , .Srilanka, .North-America , .Kashmir, .Bangladesh, .Bandarban{
+.maldiv,
+.indonesia,
+.Srilanka,
+.North-America,
+.Kashmir,
+.Bangladesh,
+.Bandarban {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
@@ -201,5 +208,15 @@
 
     .popular {
         flex-direction: column;
+    }
+
+    .first-img,
+    .second-img,
+    .third-img{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .destination img{
+        width:100%;
     }
 }
